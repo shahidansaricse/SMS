@@ -33,7 +33,8 @@ public class StudentRestController {
         existing.setFirstName(student.getFirstName());
         existing.setLastName(student.getLastName());
         existing.setEmail(student.getEmail());
-
+        existing.setCourse(student.getCourse());
+        existing.setMarks(student.getMarks());
         return service.saveStudent(existing);
     }
 
